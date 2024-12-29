@@ -6,16 +6,29 @@ body {
     color: #333;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
 header {
     background-color: #2ecc71;
     color: #fff;
-    padding: 1rem;
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
     text-align: center;
 }
 
 header nav ul {
     list-style: none;
     padding: 0;
+    text-align: center;
 }
 
 header nav ul li {
@@ -30,17 +43,17 @@ header nav ul li a {
 }
 
 main {
-    padding: 2rem;
+    padding: 2rem 0;
 }
 
 #intro {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     font-family: 'Roboto', sans-serif;
 }
 
 #carousel {
-    margin: 2rem 0;
+    margin: 3rem 0;
     text-align: center;
 }
 
@@ -48,6 +61,8 @@ main {
     position: relative;
     width: 100%;
     overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 .carousel-slide {
@@ -57,6 +72,7 @@ main {
 
 .carousel-slide img {
     width: 100%;
+    height: auto;
     border-radius: 8px;
 }
 
@@ -64,6 +80,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 3rem;
 }
 
 .tutoriel {
@@ -92,6 +109,7 @@ main {
 .tutoriel h3 {
     font-size: 1.2rem;
     margin: 0.5rem 0;
+    font-weight: 700;
 }
 
 .tutoriel p {
@@ -99,20 +117,21 @@ main {
 }
 
 #testimonials {
-    background-color: #e0f7fa;
-    padding: 2rem;
+    background-color: #f1f1f1;
+    padding: 3rem 1rem;
     border-radius: 8px;
-    margin: 2rem 0;
+    margin: 3rem 0;
     font-family: 'Roboto', sans-serif;
 }
 
 .testimonial {
     margin: 1rem 0;
+    font-style: italic;
 }
 
 #newsletter {
     text-align: center;
-    margin: 2rem 0;
+    margin: 3rem 0;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -127,6 +146,7 @@ main {
     margin-right: 0.5rem;
     border: 1px solid #ddd;
     border-radius: 4px;
+    width: 250px;
 }
 
 #newsletter button {
@@ -147,7 +167,8 @@ footer {
     background-color: #2ecc71;
     color: #fff;
     text-align: center;
-    padding: 1rem;
+    padding: 1rem 0;
+    margin-top: 3rem;
 }
 
 footer .social-links a {

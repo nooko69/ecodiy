@@ -20,4 +20,44 @@ document.addEventListener('DOMContentLoaded', function() {
         `;
         tutorielsSection.appendChild(tutorielDiv);
     });
+
+    // Carrousel
+    const carouselSlide = document.querySelector('.carousel-slide');
+    const carouselImages = document.querySelectorAll('.carousel-slide img');
+    const prevBtn = document.querySelector('#prev');
+    const nextBtn = document.querySelector('#next');
+
+    let counter = 0;
+    const size = carouselImages[0].clientWidth;
+
+    function moveToSlide() {
+        carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+    }
+
+    nextBtn.addEventListener('click', () => {
+        if (counter >= carouselImages.length - 1) return;
+        carouselSlide.style.transition = "transform 0.5s ease-in-out";
+        counter++;
+        moveToSlide();
+    });
+
+    prevBtn.addEventListener('click', () => {
+        if (counter <= 0) return;
+        carouselSlide.style.transition = "transform 0.5s ease-in-out";
+        counter--;
+        moveToSlide();
+    });
+
+    carouselSlide.addEventListener('transitionend', () => {
+        if (carouselImages[counter].id === 'lastClone') {
+            carouselSlide.style.transition = "none";
+            counter = carouselImages.length - 2;
+            moveToSlide();
+        }
+        if (carouselImages[counter].id === 'firstClone') {
+            carouselSlide.style.transition = "none";
+            counter = carouselImages.length - counter;
+            moveToSlide();
+        }
+    });
 });

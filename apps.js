@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { titre: 'Décorations Écologiques', description: 'Créez des décorations de fête à partir de matériaux naturels.', image: 'https://via.placeholder.com/300?text=D%C3%A9corations+%C3%89cologiques', lien: '#' }
     ];
 
-    const tutorielsSection = document.getElementById('tutoriels');
+    const tutorielsSection = document.getElementById('tutoriel-liste');
 
     tutoriels.forEach(tutoriel => {
         const tutorielDiv = document.createElement('div');

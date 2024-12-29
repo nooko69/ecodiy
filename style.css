@@ -37,6 +37,27 @@ main {
     margin-bottom: 2rem;
 }
 
+#carousel {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+    width: 100%;
+    border-radius: 8px;
+}
+
 #tutoriels {
     display: flex;
     flex-wrap: wrap;
@@ -70,4 +91,60 @@ main {
 
 .tutoriel p {
     margin: 0.5rem 0;
+}
+
+#testimonials {
+    background-color: #e0f7fa;
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+.testimonial {
+    margin: 1rem 0;
+}
+
+#newsletter {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+#newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#newsletter input {
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#newsletter button {
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#newsletter button:hover {
+    background-color: #27ae60;
+}
+
+footer {
+    background-color: #2ecc71;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer .social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0.5rem;
 }

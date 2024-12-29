@@ -1,8 +1,8 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #fdfdfd;
     color: #333;
 }
 
@@ -26,6 +26,7 @@ header nav ul li {
 header nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: 700;
 }
 
 main {
@@ -35,6 +36,7 @@ main {
 #intro {
     text-align: center;
     margin-bottom: 2rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 #carousel {
@@ -73,6 +75,7 @@ main {
     width: calc(32% - 1rem);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, background-color 0.2s;
+    font-family: 'Roboto', sans-serif;
 }
 
 .tutoriel:hover {
@@ -81,7 +84,9 @@ main {
 
 .tutoriel img {
     max-width: 100%;
+    height: auto;
     border-radius: 8px;
+    margin-bottom: 1rem;
 }
 
 .tutoriel h3 {
@@ -98,6 +103,7 @@ main {
     padding: 2rem;
     border-radius: 8px;
     margin: 2rem 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .testimonial {
@@ -107,6 +113,7 @@ main {
 #newsletter {
     text-align: center;
     margin: 2rem 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 #newsletter form {
@@ -147,4 +154,8 @@ footer .social-links a {
     color: #fff;
     text-decoration: none;
     margin: 0 0.5rem;
+}
+
+footer .social-links a:hover {
+    text-decoration: underline;
 }
